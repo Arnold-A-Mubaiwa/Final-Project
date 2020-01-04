@@ -23,7 +23,7 @@ On Linux
     • manually move the Finally file to the: /opt/lampp/htdocs/ folder
 
 Open Your Browser Firefox or Chrome and type
-    • root/Finally/index2.php
-    • or localhost/Finally/index2.php
+    • root/Finally/
+    • or localhost/Finally/
     
 Then you are good to go..
