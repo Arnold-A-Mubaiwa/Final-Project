@@ -65,12 +65,13 @@ require_once("connection.php");
  <body>
 
  <div class="container">
-     <div id="logo_container">
-         <img class="img-responsive" id="Logo" src="images/home.png">
-         <!-- <img class="img-responsive" id="Logo" src="confirmation.html"> -->
-         <!-- <script type="text/javascript" src="jquery-1.3.2.min.js/jquery-1.3.2.min.js"></script>
-         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-     </div>
+    
+     <div id="header">
+        <header>
+            <p><img src="images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+                        class="innerLogo">nstitute</span></span></p>
+        </header>
+    </div>
      <div class="main_div">
          <h2>STAFF SIGN IN</h2>
          <p>ENTER YOUR ASSIGNED CODE</p><BR>

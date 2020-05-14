@@ -21,8 +21,7 @@ $table =$_SESSION['login_TableName'];
             $sql = "INSERT INTO $table(StudentNo, Name,Surname,Module,YearOfStudy)VALUES ('" .$userSN . "','" .$userName . "','" .$userSurname . "','".$userModule."','".$userYearOfStudy."')";
             mysqli_query($conn,$sql);
             $current_id = mysqli_insert_id($conn);
-        }
-        elseif($lecturerId === $_SESSION['login_ID']){
+        }elseif($lecturerId === $_SESSION['login_ID']){
             header('location: checkAttendace.php');
         }
         else {
@@ -36,16 +35,20 @@ $table =$_SESSION['login_TableName'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href= "../css/index.css">
 	<script src="../jquery-1.3.2.min.js/jquery-1.3.2.min.js"></script>
 	<script src="../js/data.js"></script>
     <title>Student Sign in</title>
 </head>
 <body>
 <div class="container">
-		<div id="logo_container">
-			<img class="img-responsive" id="Logo" src="../images/home.png">
-		</div>
+<div id="header">
+        <header>
+            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+                        class="innerLogo">nstitute</span></span></p>
+        </header>
+    </div>
 		 <div class= "main_div">
 			 <h3>WELCOME  <br>To <?php echo $_SESSION['module']; ?> <br> With <?php echo $_SESSION['login_Name']." ". $_SESSION['login_Surname']; ?></h3>
         	<BR>

@@ -13,7 +13,8 @@ header("location: StudentSignin.php");
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href= "../css/index.css">
     <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
@@ -21,8 +22,8 @@ header("location: StudentSignin.php");
     <style>
         .container {
             text-align: center;
-            width: 80%;
-            margin-left: 10%;
+            /* width: 80%;
+            margin-left: 10%; */
         }
         .View-register,
         .Select-modules {
@@ -47,20 +48,31 @@ header("location: StudentSignin.php");
         a {
             text-decoration: none;
         }
-        #logo_container {
+        .p_span{
+            font-size: 5.8em;
+        }
+        img{
+    height: 3.4em;
+    margin-bottom:30px;
+} 
+        /* #logo_container {
             margin-bottom: 20px;
-        }
-        #moveDown {
+        } */
+        /* #moveDown {
             margin-top: 130px;
-        }
+        } */
     </style>
 </head>
 
 <body>
+
     <div class="container">
-        <div id="logo_container">
-            <img src="../images/home.png" />
-        </div>
+    <div id="header">
+        <header>
+            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+                        class="innerLogo">nstitute</span></span></p>
+        </header>
+    </div>
         <div id="moveDown" class="View-register">
             <a href="Register.php">
                 <input class="buttons" type="button" value="VIEW REGISTER">
@@ -76,7 +88,7 @@ header("location: StudentSignin.php");
             </form>
         </div>
         <div id="backlink">
-            <a id="lOGOUT" href="../index2.php"><label>LOGOUT</label></a>
+            <a id="lOGOUT" href="../index.php"><label>LOGOUT</label></a>
         </div>
     </div>
     <script>

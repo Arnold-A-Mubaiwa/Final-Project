@@ -9,47 +9,46 @@ require_once('connection.php');
 	<script type="text/javascript" src="../jquery-1.3.2.min.js/jquery-1.3.2.min.js"></script>
 	<script typetext="text/javascript" src="../http://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="stylesheet" type="text/css" href= "../css/main.css">
+	<link rel="stylesheet" type="text/css" href= "../css/index.css">
 	<style>
 	.conf-table{
 			 font-style: italic;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-			margin-left: 30%;
+			/* margin-left: 30%; */
 	}
 	td{
-		padding-right:20px;
+		padding-right:20%;
+		padding-left:30%;
+	}
+	#center_tb{
+		text-align: center;
 	}
 	</style>
 </head>
 <body onload="closeTab()">
 	<div class="container">
-		<div id="logo_container">
-			<img class="img-responsive" id="Logo" src="../images/home.png">
-		</div>
+	<div id="header">
+        <header>
+            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+                        class="innerLogo">nstitute</span></span></p>
+        </header>
+    </div>
 		<div class= "main_div">
 				<!-- <img class="Lecture_img" src="../images/lectures/photo.png"> -->
-			<p>
-				<table class="conf-table">
-					<tr><td>Lecturer Number</td><td>: <?php echo $_SESSION['login_ID'] ?></td></tr>
-					<tr><td>Name</td><td>: <?php echo $_SESSION['login_Name']  ?></td></tr>
-					<tr><td>Surname</td><td>: <?php echo $_SESSION['login_Surname']  ?></td></tr>
-					<tr><td>Faculty</td><td>: <?php echo $_SESSION['login_Faculty']  ?></td></tr>
-				</table>
-				<!-- <span id="ICAS_NUMBER">
-					<?php echo $_SESSION['login_ID'] ?>
-				</span><BR>
-				<span id="Name"><?php echo $_SESSION['login_Name']  ?></span>
-				<span><?php echo $_SESSION['login_Surname']  ?></span>
-			</p>
-			<p>Faculty Of<br>
-				<span id="Faculty"><?php echo $_SESSION['login_Faculty']  ?></span> 
-			</p> -->
+			<p id="center_tb">
+				<!-- <table class="conf-table"> -->
+					Lecturer Number: <?php echo $_SESSION['login_ID'] ?></br>
+					Name: <?php echo $_SESSION['login_Name']  ?></br>
+					Surname: <?php echo $_SESSION['login_Surname']  ?></br>
+					Faculty: <?php echo $_SESSION['login_Faculty']  ?></br>
+				<!-- </table> -->
 			<a href="Choose.php">
 			
 				<button id="confirm">
 					Confirm
 				</button>
 			</a><br>
-			<a href="../index2.php" class="btn btn-default">Not You?</a></form> 
+			<a href="../index.php" class="btn btn-default">Not You?</a></form> 
 			
 		</div>
 	</div>

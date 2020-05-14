@@ -160,3 +160,33 @@ a{
 table{
 	text-align: left;
 }
+#header{
+	text-align: center;
+	height: 7em;
+}
+img{
+	height: 3em;
+}
+.p_span{
+	padding-bottom:60px;
+	font-family:'Caveat Brush', 'Franklin Gothic Medium', 'Arial Narrow',Caveat, Arial, sans-serif;
+	font-size: 5em;
+	/* font-size: 60px; */
+	color:  #1d202e;
+	font-weight: bolder;
+	font-variant-caps: all-petite-caps;
+	/* background-color: cadetblue; */
+} 
+#credentials{
+	text-align: center;
+	padding-top: 50px;
+}
+.innerLogo{
+	font-family:'Caveat Brush';
+	font-size: 0.6em;
+	/* font-size: 40px; */
+}
+.userID{
+	color:  #1d202e;
+	font-weight: bolder;
+}

@@ -14,7 +14,7 @@ require_once('connection.php');
 </head>
 <body>
         <div class="result">
-                <?php
+                    <?php
                       $sql = "SELECT * FROM sys.tables WHERE StudentNumber = ?";
                       if($result = mysqli_query($conn, $sql)){
                           if(mysqli_num_rows($result) > 0){

@@ -22,7 +22,7 @@
                     <div class="alert alert-danger fade in">
                         <p>Sorry, you've made an invalid request. </br> 
                         If you forgot your login details please contact the administrator <b>ELSE</b></br>
-                        Please <a href="index2.php" class="alert-link">go back</a> and try again.</p>
+                        Please <a href="index.php" class="alert-link">go back</a> and try again.</p>
                     </div>
                 </div>
             </div>        
