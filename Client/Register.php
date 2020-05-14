@@ -7,27 +7,11 @@ $table = $_SESSION['login_TableName'];
 <html>
     <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href= "../css/index.css">
     <style type="text/css">
-        #logo_container{
-        /* padding-top: 3%; */
-        padding-bottom: 7%;
-            width: 60%;
-            height: 100px;
-            margin-left:20%;
-            position:fixed;
-        }
-            #Logo{
-                width: 100%;
-                height: 170px;
-        
-            }
            
         .page-header h2{
             margin-top: 0;
-        }
-        .container{
-            /* margin-right:30%; */
-            /* border:2px solid black; */
         }
         th{
             background-color: rgb(11, 19, 46);
@@ -38,9 +22,7 @@ $table = $_SESSION['login_TableName'];
         table tr td:last-child a{
             margin-right: 10px;
         }
-        body{
-            /* padding:40px; */
-        }
+       
         td{
             font-size:14px;
             
@@ -73,14 +55,27 @@ $table = $_SESSION['login_TableName'];
   border-color: rgb(11, 19, 46);
 }
 .row{
-    padding-top: 130px;
+    padding-top: 5em;
 }
 #mybutton {
     vertical-align: bottom
-  /* position: fixed; */
-  bottom: -4px;
-  /* right: 10px; */ 
+
 }
+#header{
+    position:fixed;
+    text-align: center;
+    width:100%;
+    /* overflow: hidden;
+    background-color: #333; */
+    display:block;
+    top: 0;
+}.p_span{
+            font-size: 5.8em;
+        }
+        img{
+    height: 3.4em;
+    margin-bottom:30px;
+} 
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -113,10 +108,14 @@ function myFunction() {
 </script>
 </head>
 <body>
+<div id="header">
+        <header>
+            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+                        class="innerLogo">nstitute</span></span></p>
+        </header>
+    </div>
 <div class="container">
-<div id="logo_container">
-			<img class="img-responsive" id="Logo" src="../images/home.png">
-		</div>
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix" style="text-align:center;">

@@ -16,6 +16,7 @@ header("location: StudentSignin.php");
     <!-- <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
     <link rel="stylesheet" type="text/css" href= "../css/index.css">
     <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../js/w3sAutoComplete.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <title>Choose</title>
@@ -81,7 +82,7 @@ header("location: StudentSignin.php");
         <div class="Select-modules">
             <input id="setModule" class="buttons" type="button" value="SET CURRENT MODULE">
             <form id="form-values" method="post" hidden>
-                <div class="form-group"> <label>Enter Current Module and Code</label> <input class="form-control"
+                <div class="form-group"> <label>Enter Current Module and Code</label> <input id="myInput"class="form-control"
                         type="text" name="module" placeholder="e.g Programming 511" required><br>
                 </div>
                 <a href="StudentSignin.php"><input class="btn " type="Submit" value="Submit"></a>
