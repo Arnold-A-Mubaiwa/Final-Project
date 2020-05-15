@@ -3,7 +3,7 @@ session_start();
 require_once("connection.php");
 $table =$_SESSION['login_TableName'];
 $date = date("Y-m-d");
-echo $date;
+// echo $date;
 	if($_SERVER["REQUEST_METHOD"]== "POST"){
         $lecturerId = $_POST['StudentNumber'];
         $sql = "SELECT * from Students Where StudentNumber = '". $_POST['StudentNumber']."'";
