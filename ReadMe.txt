@@ -16,8 +16,8 @@ To start Xampp on Linux you can type:
 
 /opt/lampp/lampp start
 
-Create an empty “register” database.
-Import the Register.sql provided in the Finally folder into your "register" database you just created
+Create an empty “REGISTER” database.
+Import the register.sql provided in the Finally folder into your "register" database you just created
 
 On Linux 
     • manually move the Finally file to the: /opt/lampp/htdocs/ folder
