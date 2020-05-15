@@ -81,8 +81,8 @@ header("location: StudentSignin.php");
         </div>
         <div class="Select-modules">
             <input id="setModule" class="buttons" type="button" value="SET CURRENT MODULE">
-            <form id="form-values" method="post" hidden>
-                <div class="form-group"> <label>Enter Current Module and Code</label> <input id="myInput"class="form-control"
+            <form autocomplete="off" id="form-values" method="post" hidden>
+                <div class="form-group autocomplete" > <label>Enter Current Module and Code</label> <input id="myInput"class="form-control"
                         type="text" name="module" placeholder="e.g Programming 511" required><br>
                 </div>
                 <a href="StudentSignin.php"><input class="btn " type="Submit" value="Submit"></a>
