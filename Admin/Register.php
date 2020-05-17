@@ -35,6 +35,11 @@ $table= $_SESSION['table'];
             padding-left:20px;
             margin-left:4%;
         }
+        #scrolls{
+            overflow:auto;
+            height:398px;
+            /* background-color:blue; */
+        }
         </style>
         <script>
 function myFunction() {
@@ -69,6 +74,7 @@ function myFunction() {
     <input type="text" id="myInput" class="search-btn" onkeyup="myFunction()" placeholder="Search for Student Number.."><br><br>
       </div>
         <div class="result">
+        <div id="scrolls">
             <?php
                   $sql = "SELECT * FROM $table";
                   if($result = mysqli_query($conn, $sql)){
@@ -109,6 +115,7 @@ function myFunction() {
                   // Close connection
                   mysqli_close($conn);
                   ?>
+                  </div>
                    </div>
         </div>
             </div>

@@ -46,7 +46,7 @@ $date = date("Y-m-d");
     <link rel="stylesheet" type="text/css" href= "../css/index.css">
 	<script src="../jquery-1.3.2.min.js/jquery-1.3.2.min.js"></script>
 	<script src="../js/data.js"></script>
-    <title>Student Sign in</title>
+    <title>Durnolds Institute</title>
 </head>
 <body>
 <div class="container">

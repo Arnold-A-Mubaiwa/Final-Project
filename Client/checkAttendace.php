@@ -11,10 +11,9 @@ if(isset($_POST['save'])){
     $checkbox = $_POST['check'];
 	for($i=0;$i<count($checkbox);$i++){
     $del_id = $checkbox[$i]; 
-    mysqli_query($conn,"DELETE FROM $table WHERE StudentNo='".$del_id."' && DateOfAttendance LIKE '% $date%'");
+    mysqli_query($conn,"DELETE FROM $table WHERE StudentNo='".$del_id."' && DateOfAttendance LIKE '%$date%'");
     // echo "Data deleted successfully !";
     header('location: Choose.php');
-   
 }
 }
 $result = mysqli_query($conn,"SELECT * FROM  $table WHERE DateOfAttendance LIKE '%$date%' && Module LIKE '%$modulename%' ");
@@ -29,7 +28,7 @@ $result = mysqli_query($conn,"SELECT * FROM  $table WHERE DateOfAttendance LIKE 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <title>Document</title>
+    <title>Durnolds Institute</title>
     <style type="text/css">
         .page-header h2{
             margin-top: 0;
@@ -66,6 +65,11 @@ $result = mysqli_query($conn,"SELECT * FROM  $table WHERE DateOfAttendance LIKE 
             padding-left:20px;
             margin-left:4%;
         }
+        #scrolls{
+            overflow: auto;
+    height: 380px;
+
+        }
     </style>
 </head>
 <body>
@@ -74,6 +78,7 @@ $result = mysqli_query($conn,"SELECT * FROM  $table WHERE DateOfAttendance LIKE 
                         <h4 class="pull-right">Select Students not in class</h4>
                     </div>
     <div>
+    <div id="scrolls">
     <form method="post" action="">
 <table class="table table-bordered table-striped">
 <thead>
@@ -100,6 +105,7 @@ $i++;
 }
 ?>
 </table>
+</div>
 <button onclick="bye()"  name="save">DONE</button>
 </form>
 <script>

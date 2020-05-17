@@ -19,7 +19,7 @@ header("location: StudentSignin.php");
     <script type="text/javascript" src="../js/w3sAutoComplete.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <title>Choose</title>
+    <title>Durnolds Institute</title>
     <style>
         .container {
             text-align: center;

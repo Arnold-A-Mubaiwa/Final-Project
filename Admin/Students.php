@@ -41,6 +41,11 @@
             padding-left:20px;
             margin-left:4%;
         }
+        #scrolls{
+            overflow:auto;
+            height:378px;
+            /* background-color:blue; */
+        }
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -79,7 +84,7 @@ function myFunction() {
                         <input type="text" id="myInput" class="search-btn" onkeyup="myFunction()" placeholder="Search For Student Number..">
                         <a href="NewStudent.php" class="btn pull-right addBTN" >Add New Student</a>
                     </div>
-                    
+                    <div id="scrolls">
                     <?php
                     // Include config file
                     require_once "connection.php";
@@ -133,6 +138,7 @@ function myFunction() {
                     // Close connection
                     mysqli_close($conn);
                     ?>
+                    </div>
                 </div>
             </div>        
 </body>

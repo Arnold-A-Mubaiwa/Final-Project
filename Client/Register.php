@@ -28,7 +28,7 @@ $table = $_SESSION['login_TableName'];
             
         }
         .addBTN{
-            background-color: rgb(11, 19, 46);
+            background-color: padding: 10px 20px;
             color:white;
         }
         tr{
@@ -46,16 +46,27 @@ $table = $_SESSION['login_TableName'];
         }
         .Back:hover{
             background-color:lightgray;
+            color:rgb(11, 19, 46);
         }
-        .Back {
+         .Back {
+             /*
   background-color : white;
   color:rgb(11, 19, 46);
   padding: 10px 20px;
   border-radius: 4px;
   border-color: rgb(11, 19, 46);
-}
+} */
+margin-top:10px;
+width:100px;
+padding: 10px 20px;
+         }
 .row{
-    padding-top: 5em;
+    margin-top: 7em;
+ 
+}
+#scrolls{
+    overflow: auto;
+    height: 350px;
 }
 #mybutton {
     vertical-align: bottom
@@ -106,6 +117,7 @@ function myFunction() {
   }
 }
 </script>
+<title>Durnolds Institute</title>
 </head>
 <body>
 <div id="header">
@@ -116,14 +128,14 @@ function myFunction() {
     </div>
 <div class="container">
 
-            <div class="row">
+            <div class="row" scroll="yes">
                 <div class="col-md-12">
                     <div class="page-header clearfix" style="text-align:center;">
                        
                         <input type="text" id="myInput" class="search-btn" onkeyup="myFunction()" placeholder="Search For Student Number..">
                        
                     </div>
-                    
+                    <div id="scrolls">
                    <?php
 
                   $sql = "SELECT * FROM $table ORDER BY DateOfAttendance DESC";
@@ -165,6 +177,7 @@ function myFunction() {
                   // Close connection
                   mysqli_close($conn);
                   ?>
+                  </div>
                 </div>
             </div> 
             <div id="mybutton">
