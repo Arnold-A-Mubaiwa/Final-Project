@@ -96,13 +96,23 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var courses = ["Programming 511","Programming 512","Programming 621","Programming 622","Programming 731","Programming 732"
+var courses={MICT : ["Programming 511","Programming 512","Programming 621","Programming 622","Programming 731","Programming 732"
             ,"Networks 511","Networks 522","Networks 621","Networks 622","Networks 731","Networks 732"
             ,"Information Systems 511","Information Systems 512","Information Systems 621","Information Systems 622"
             ,"Computer Security 600","Computer Security 601"
             ,"Database 521","Database 522","Database 600","Database 601",
-            ];
+            ],
+            NP: [
+              "Life Orientation","Life Skills","Bio Neuron"
+            ],
+            BEMS:[
+              "Commercial Law 511", "Human Resources 511", "Business Management 600"
+            ],
+            PMLG:[
+              "SSSS 111","SSSS 222", "SSS 333"
+            ]
+          };
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the courses array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), courses);
+
 

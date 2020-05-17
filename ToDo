@@ -7,6 +7,5 @@ Make the app able to send email and SMSs
 Use JS  everywhere it is required
 Orginise your work css=css js=js
 Make your links work from every folder       
-////////////////
-*The input box still needs fixing so that it auto fills whilst the user is typing  
-*Redesign the layout to occupy much resposibilities
+The input box still needs fixing so that it auto fills whilst the user is typing  *
+Redesign the layout to occupy much resposibilities
