@@ -9,11 +9,15 @@ $table = $_SESSION['login_TableName'];
 $modulename =$_SESSION['module'];
 if(isset($_POST['save'])){
     $checkbox = $_POST['check'];
+    if(count($checkbox)==0){
+        header('location: Choose.php');
+    }else{
 	for($i=0;$i<count($checkbox);$i++){
     $del_id = $checkbox[$i]; 
     mysqli_query($conn,"DELETE FROM $table WHERE StudentNo='".$del_id."' && DateOfAttendance LIKE '%$date%'");
     // echo "Data deleted successfully !";
     header('location: Choose.php');
+    }
 }
 }
 $result = mysqli_query($conn,"SELECT * FROM  $table WHERE DateOfAttendance LIKE '%$date%' && Module LIKE '%$modulename%' ");

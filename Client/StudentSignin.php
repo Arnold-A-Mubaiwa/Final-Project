@@ -6,7 +6,7 @@ $date = date("Y-m-d");
 // echo $date;
 	if($_SERVER["REQUEST_METHOD"]== "POST"){
         $lecturerId = $_POST['StudentNumber'];
-        $sql = "SELECT * from Students Where StudentNumber = '". $_POST['StudentNumber']."'";
+        $sql = "SELECT * from Students Where StudentNumber = '". $_POST['StudentNumber']."' && Faculty = '".$_SESSION['login_Faculty']."'";
         $result = mysqli_query($conn,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         $userSN = $row['StudentNumber'];

@@ -135,8 +135,9 @@ th{
                         echo "<td>" . $row['Name'] . "</td>";
                         echo "<td>" . $row['Surname'] . "</td>";
                         echo "<td><a href='Register.php'>" ;
-                        // echo $_SESSION['table']= $row['tableName'];
-                        echo $row["tableName"]; $_SESSION['table'] = $row["tableName"];
+                        $_SESSION['table']= $row['tableName'];
+                         echo $row["tableName"]; 
+                        //  $_SESSION['table'] = $row["tableName"];
                         echo "</a></td>";
                         echo "</tr>";
                     }          
