@@ -28,7 +28,8 @@ $table = $_SESSION['login_TableName'];
             
         }
         .addBTN{
-            background-color: padding: 10px 20px;
+            /* background-color: ; */
+            padding: 10px 20px;
             color:white;
         }
         tr{
@@ -122,7 +123,7 @@ function myFunction() {
 <body>
 <div id="header">
         <header>
-            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+            <p><img src="../images/homei.png"><span class="p_span">R<span class="innerLogo">ichfield</span> I<span
                         class="innerLogo">nstitute</span></span></p>
         </header>
     </div>

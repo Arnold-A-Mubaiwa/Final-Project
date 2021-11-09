@@ -29,7 +29,7 @@ require_once('connection.php');
 	<div class="container">
 	<div id="header">
         <header>
-            <p><img src="../images/homei.png"><span class="p_span">D<span class="innerLogo">urnolds</span> I<span
+            <p><img src="../images/homei.png"><span class="p_span">R<span class="innerLogo">ichfield</span> I<span
                         class="innerLogo">nstitute</span></span></p>
         </header>
     </div>
